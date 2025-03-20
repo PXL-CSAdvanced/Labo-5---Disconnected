@@ -19,7 +19,7 @@ Je start met het aanmaken van twee DataTables:
  - Eén tabel voor de monsters met de volgende eigenschappen: Id, Name, Tier, BasePower en BaseHealth.
  - Eén tabel voor de tiers waarin per tier een: Name en PowerAndHealthModifier eigenschap wordt bijgehouden.
 
-Behoud de volgorde van de bovenstaande eigenschappen voor de structuur van deze tabellen. Gebruik de onderstaande class diagram als hulpmiddel.
+Behoud de volgorde van de bovenstaande eigenschappen voor de structuur van deze tabellen. Gebruik de onderstaande class diagram als hulpmiddel voor de datatypes.
 
 <img src="images/1.png" width="450px" />
 <img src="images/2.png" width="450px" />
@@ -81,6 +81,15 @@ public MainWindow()
 private void ClearMonsters_Click(object sender, RoutedEventArgs e)
 {
     // TODO: alle monsters verwijderen
+}
+```
+
+Vervolgens wil je aan de gekoppelde DataTable nieuwe willekeurige monsters toe voegen:
+```
+public static void AddRandomMonster() 
+{
+    Monster randomMonster = MonsterGenerateRandomMonster();
+    // TODO: Voeg het willekeurige monster toe aan _monsterDataTable
 }
 ```
 
