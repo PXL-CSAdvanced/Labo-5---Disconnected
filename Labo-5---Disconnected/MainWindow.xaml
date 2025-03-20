@@ -39,7 +39,8 @@
                   BorderThickness="1"
                   SelectionMode="Single"
                   FontSize="14"
-                  Margin="10">
+                  Margin="10"
+                  SelectionChanged="MonsterDataGrid_SelectionChanged">
         </DataGrid>
 
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2"  

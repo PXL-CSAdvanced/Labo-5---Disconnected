@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using MonsterClassLibrary.DataAccess;
+using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -50,6 +51,11 @@ namespace Labo_5___Disconnected
         private void GenerateMonster_Click(object sender, RoutedEventArgs e)
         {
             MonsterData.AddRandomMonster();
+        }
+
+        private void MonsterDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

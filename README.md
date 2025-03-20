@@ -105,3 +105,15 @@ private void ExportToXml_Click(object sender, RoutedEventArgs e)
     // exporteer de gegevens met behulp van MonsterData
 }
 ```
+
+## 5. Bonus uitbreiding: Image SelectionChanged
+
+Zorg er voor dat je op een SelectionChanged van je DataGrid controleert of er een rij is geselecteerd.
+
+*Let op*: een rij uit een DataView is geen DataRow, maar een DataRowView. Je wil op basis van de Name eigenschap een rij de afbeelding aanpassen naar de afbeelding van het geselecteerde monster.
+
+Voeg zelf nog enkele afbeeldingen toe van al de overige monsters.
+
+
+#### Veel success!!!
+
