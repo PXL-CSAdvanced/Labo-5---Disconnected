@@ -96,5 +96,14 @@ namespace MonsterClassLibrary.DataAccess
             return randomMonster;
         }
 
+        public static void ImportFromXML(string fileName)
+        {
+            _monsterDataSet.ReadXml(fileName);
+        }
+
+        public static void ExportToXML(string fileName)
+        {
+            _monsterDataSet.WriteXml(fileName);
+        }
     }
 }

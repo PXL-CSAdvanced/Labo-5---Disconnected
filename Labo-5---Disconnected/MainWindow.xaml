@@ -39,7 +39,8 @@
                   BorderThickness="1"
                   SelectionMode="Single"
                   FontSize="14"
-                  Margin="10"/>
+                  Margin="10">
+        </DataGrid>
 
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2"  
                     Orientation="Horizontal"
