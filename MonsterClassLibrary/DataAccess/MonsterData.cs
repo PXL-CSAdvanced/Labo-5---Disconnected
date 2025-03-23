@@ -10,7 +10,7 @@ namespace MonsterClassLibrary.DataAccess
 {
     public static class MonsterData
     {
-        private static DataSet _monsterDataSet = new DataSet();
+        private static DataSet _monsterDataSet = new DataSet("Labo-5");
         private static DataTable _monsterDataTable;
         public static DataTable MonsterDataTable { get { return _monsterDataTable; } }
         private static DataTable _tierDataTable;
@@ -61,7 +61,6 @@ namespace MonsterClassLibrary.DataAccess
         {
             string[] tiers = { "Baby", "Battle", "Adult", "Ancient", "Astral", "Godlike", "Transcendental", "Meta Infinite" };
             double[] modifiers = { 1, 1.2, 1.5, 2, 3, 10, 20, 1000 };
-            // throw new NotImplementedException();
 
             for (int i = 0; i < tiers.Length; i++)
             {
@@ -98,6 +97,7 @@ namespace MonsterClassLibrary.DataAccess
 
         public static void ImportFromXML(string fileName)
         {
+            _monsterDataSet.Clear();
             _monsterDataSet.ReadXml(fileName);
         }
 
